@@ -1,0 +1,35 @@
+<script>
+    //SWITCH CASE SWITCH CASE SWITCH CASE
+
+    //PROBLEMA: Aplicar desconto no preço da venda
+    //Peça para o vendedor informar o valor total da venda e também informar o Tipo do Cliente, considerando o seguinte cenário:
+    //Cliente Comum (Use código 1) tem 1% (1/100) de desconto.
+    //Cliente VIP (Use código 2) tem 5% (5/100) de desconto.
+    //Funcionário (Use código 3) tem 10% (10/100) de desconto.
+    
+    //Calcule e apresente o preço final da venda de acordo com o Tipo do Cliente
+
+    //ENTRADA
+const valor = Number(prompt("Informe o valor do produto"))
+const Cliente = Number(prompt("Cliente Comum (Use o código 1)|Cliente VIP (Use código 2) | Funcionário (Use código 3)| "))
+let resposta
+    //PROCESSAMENTO
+
+switch (Cliente) {
+    case 1:
+    resposta = ` Cliente Comum o valor sera:${valor - (valor * 0.01) }`
+        break;
+
+    case 2:
+    resposta = ` Cliente VIP o valor sera:${valor -(valor * 0.05) }`
+        break;
+   case 3:
+    resposta =`Cliente VIP o valor sera:${valor - (valor * 0.1) }`
+        break;
+        default:
+    resposta = "Invalido!!"
+    break;
+}
+    //SAÍDA
+alert(resposta)
+</script>
